@@ -1,0 +1,42 @@
+@BASE_URL = http://localhost:2500/course
+@TOKEN = 1
+
+# Add a new Course
+POST  {{BASE_URL}}/
+Content-Type: application/json
+
+{
+
+  "title": "Backend in 4 hrs",
+  "author": "test3",
+  "isbn": "1134567890",
+  "price": 119.32
+
+}
+###
+
+# Get all Courses
+GET {{BASE_URL}}/
+Content-Type: application/json
+
+###
+
+# Details of Single Course
+GET {{BASE_URL}}/68b9689f47489f65ad529fde
+###
+
+# Update Course
+PUT {{BASE_URL}}/68b9689f47489f65ad529fde
+Content-Type: application/json
+
+{
+  "title": "Backend in 3 hrs",
+  "author": "test31",
+  "isbn": "11345678901",
+  "price": 1199.32
+}
+###
+
+# Delete Course
+DELETE {{BASE_URL}}/68b9689f47489f65ad529fde
+###

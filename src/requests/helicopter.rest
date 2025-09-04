@@ -1,0 +1,26 @@
+@BASE_URL = http://localhost:2500/helicopter
+@TOKEN = 1
+
+# Add Helicopter
+POST {{BASE_URL}}/add
+content-type: application/json
+Authorization: Bearer {{TOKEN}}
+
+{
+    "model": "HEL01",
+    "color": "White"
+}
+###
+
+#
+GET {{BASE_URL}}/get
+###
+
+#
+GET {{BASE_URL}}/get/HEL01
+###
+
+
+#
+DELETE  {{BASE_URL}}/delete/HEL01
+###
