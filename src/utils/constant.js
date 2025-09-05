@@ -9,6 +9,7 @@ export const Constant = {
 
     COURSE_MODEL: "Course",
     STUDENT_MODEL: "Student",
-    PRODUCT_MODEL: "Product"
+    PRODUCT_MODEL: "Product",
+    TEACHER_MODEL: "Teacher"
 }
 

@@ -25,6 +25,11 @@ Content-Type: application/json
 GET {{BASE_URL}}/68b9689f47489f65ad529fde
 ###
 
+# Details of Single Course by isbn
+GET {{BASE_URL}}/isbn/1134567890
+
+###
+
 # Update Course
 PUT {{BASE_URL}}/68b9689f47489f65ad529fde
 Content-Type: application/json
@@ -38,5 +43,5 @@ Content-Type: application/json
 ###
 
 # Delete Course
-DELETE {{BASE_URL}}/68b9689f47489f65ad529fde
+DELETE {{BASE_URL}}/68ba209c1a2e0dfe5634a020
 ###

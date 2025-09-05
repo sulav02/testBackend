@@ -12,6 +12,7 @@ import cowRoute from "./routes/cowRoute.js"
 import studentRoute from "./routes/studentRoute.js"
 import courseRoute from "./routes/courseRoute.js"
 import helicopterRoute from "./routes/helicopterRoute.js"
+import teacherRoute from "./routes/teacherRoute.js"
 
 
 // Route Use
@@ -21,6 +22,7 @@ app.use("/cow", cowRoute)
 app.use("/student", studentRoute)
 app.use("/helicopter", helicopterRoute)
 app.use("/course", courseRoute)
+app.use ("/teacher", teacherRoute)
 
 app.get("/", async (req, res) => {
     res.send("Welcome to Test Api")

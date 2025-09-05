@@ -46,6 +46,18 @@ export const getSingleCourseById = async (req, res) => {
 
 }
 
+export const getSingleCourseByISBN = async (req, res) => {
+    try {
+        const isbn = req.params.isbn
+        const courseByISBN = await Course.findOne({ isbn })
+        res.status(200).json(success(`Course named ${courseByISBN.title} fetched successfully`, courseByISBN))
+    } catch (error) {
+        res.status(500).json(failure(error.message))
+    }
+    
+}
+
+
 export const updateCourse = async (req, res) => {
     try {
         const { id } = req.params;

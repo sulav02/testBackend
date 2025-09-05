@@ -1,0 +1,43 @@
+@BASE_URL = http://localhost:2500/teacher
+@TOKEN = 1
+
+# Add a new Teacher
+POST  {{BASE_URL}}/
+Content-Type: application/json
+
+{
+
+  "name": "myName",
+  "email": "test3@test.com",
+  "phone": "1134567890"
+
+}
+###
+
+# Get all Teachers
+GET {{BASE_URL}}/
+Content-Type: application/json
+
+###
+
+# Details of Single Teacher
+GET {{BASE_URL}}/68ba2b21cb0c0c42e5c5afbd
+###
+
+
+# Update Course
+PATCH  {{BASE_URL}}/68ba2b21cb0c0c42e5c5afbd
+Content-Type: application/json
+
+{
+
+  "name": "myNameismyName",
+  "email": "test30@test.com",
+  "phone": "91134567890"
+
+}
+###
+
+# Delete Course
+DELETE {{BASE_URL}}/68ba2b21cb0c0c42e5c5afbd
+###

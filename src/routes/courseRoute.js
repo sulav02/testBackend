@@ -6,6 +6,7 @@ const router = express.Router()
 router.post("/", courseController.addCourse)
 router.get("/", courseController.getAllCourse)
 router.get("/:id", courseController.getSingleCourseById)
+router.get("/isbn/:isbn", courseController.getSingleCourseByISBN)
 router.put("/:id", courseController.updateCourse);   
 router.delete("/:id", courseController.deleteCourse); 
 
