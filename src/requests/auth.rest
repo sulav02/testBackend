@@ -1,0 +1,38 @@
+@BASE_URL = http://localhost:2500/auth
+@TOKEN = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGJiOGU0ZDE0NDc1M2E2NjVlODA5NzQiLCJyb2xlIjoidXNlciIsImlhdCI6MTc1NzEzMjkyNCwiZXhwIjoxNzU3MTMzODI0fQ.DuBB-ciKS_SBIFM2ZJCsgX-ntE1PvmLD9E2TxfFBIoM
+@REFRESH_TOKEN = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGJiOGU0ZDE0NDc1M2E2NjVlODA5NzQiLCJyb2xlIjoidXNlciIsImlhdCI6MTc1NzEzMjcwNCwiZXhwIjoxNzU5NzI0NzA0fQ.o23AcqumcnsQZzPHUlYClX62DzQXo1N4TeH36aD-k6Q
+
+# Register user
+POST {{BASE_URL}}/register
+Content-Type: application/json
+
+{
+  "firstName": "Sulav",
+  "lastName": "Dhakal",
+  "email": "test3@example.com",
+  "phone": "1134567890",
+  "password": "1134567890"
+
+}
+###
+
+
+# Login user
+POST  {{BASE_URL}}/login
+Content-Type: application/json
+
+{
+  "email": "test3@example.com",
+  "password": "1134567890"
+}
+###
+
+# Refresh Token
+POST {{BASE_URL}}/refreshToken
+Content-Type: application/json
+
+{
+  "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGJiOGU0ZDE0NDc1M2E2NjVlODA5NzQiLCJyb2xlIjoidXNlciIsImlhdCI6MTc1NzEzMjkyNCwiZXhwIjoxNzU5NzI0OTI0fQ.dqKnaxbMC9SNY3EC48xAkmjDcftzIDQ4vSdo1WSRJTg"
+}
+
+###

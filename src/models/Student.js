@@ -20,10 +20,8 @@ const studentSchema = new mongoose.Schema({
         unique: true,
         trim: true
     }
-    },
-    {
-        timestamps: true // Adds createdAt and updatedAt fields automatically
-    });
+    // Adds createdAt and updatedAt fields automatically
+},{ timestamps: true });
 
 
 export default mongoose.model(Constant.STUDENT_MODEL, studentSchema);
